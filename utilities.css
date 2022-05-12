@@ -1,0 +1,90 @@
+h1{
+  font-size: 40px;
+  letter-spacing:5px;
+}
+
+h1 > span {
+  animation-name: move;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+
+h1 > span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+h1 > span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+h1 > span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+h1 > span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes move {
+  to {
+    transform: translateY(-20px) scale(1.125);
+    letter-spacing: 0;
+  }
+}
+
+.container{
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+#profile-circle{
+  border-radius: 150px;
+  width: 200px;
+  height: 200px;
+}
+
+.btn{
+  background-color:rgb(220, 13, 196);
+  color: rgb(201, 184, 193);
+  display: inline-block;
+  padding:8px 16px;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+.btn:hover{
+  padding:16px 24px;
+  background-color: greenyellow;
+}
+
+.list-inline{
+  list-style: none;
+  padding: 0;
+}
+.list-inline li{
+  display: inline-block;
+}
+
+.icon-social{
+  font-size: 36px;
+  margin: 8px;
+  color: white;
+}
